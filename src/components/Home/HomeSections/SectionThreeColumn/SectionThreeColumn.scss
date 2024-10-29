@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.articles {
+  height: 384px;
+  /* UI Properties */
+  background: #FAD648;
+  opacity: 1;
+}
+
+.article {
+  width: 30%;
+  height: 252px;
+  padding: 46px 163px;
+  color: #5E5322;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+}
+.article h1 {
+  text-align: center;
+  font: normal normal 300 90px/122px Open Sans;
+  letter-spacing: 0;
+  color: #5E5322;
+  opacity: 1;
+}
+.article h4 {
+  text-align: left;
+  font: normal normal normal 18px/30px Open Sans;
+  letter-spacing: -0.36px;
+  color: #3C3C3C;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+.article p {
+  text-align: center;
+  font: normal normal 300 16px/18px Merriweather;
+  letter-spacing: -0.32px;
+  color: #3C3C3C;
+  opacity: 1;
+  margin-top: 5px;
+}
+

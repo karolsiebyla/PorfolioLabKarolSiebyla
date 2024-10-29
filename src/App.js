@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import React from "react";
+import {
+    HashRouter,
+    Route,
+    Routes,
+    Outlet
+} from "react-router-dom"
 import './App.css';
+import Home from "./components/Home/Home";
+import Login from "./components/Navigation/Navigationitems/Login";
+import Register from "./components/Navigation/Navigationitems/Register";
+import HomeHeader from "./components/Home/HomeSections/HomeHeader/HomeHeader";
+import Logout from "./components/Navigation/Navigationitems/Logout";
+
+const Layout = () => {
+    return (
+        <>
+            <HomeHeader/>
+            <Outlet/>
+        </>
+    )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <HashRouter>
+
+          <Routes>
+              <Route path='/' element={<Layout />}>
+                <Route index element={<Home/>} />
+
+              <Route path='/logowanie' element={<Login />}/>
+              <Route path='/wylogowano' element={<Logout/>}/>
+              <Route path='/rejestracja' element={<Register />}/>
+
+              </Route>
+          </Routes>
+
+      </HashRouter>
   );
 }
 

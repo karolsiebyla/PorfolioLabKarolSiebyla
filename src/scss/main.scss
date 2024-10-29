@@ -1,6 +1,13 @@
 @import "src/scss/settings/reset";
 @import "src/scss/settings/_fonts.scss";
 @import "src/scss/settings/_colors.scss";
+@import "src/components/Navigation/Navigationitems/Register";
+@import "../components/Home/HomeSections/SectionFourStep/FourStepSection";
+@import "../components/Home/HomeSections/SectionAboutOurOrg/SectionAboutOurOrg";
+@import "../components/Home/HomeSections/SectionMain/MainSection";
+@import "../components/Home/HomeSections/SectionThreeColumn/SectionThreeColumn";
+@import "../components/Home/HomeSections/SectionOurBeneficiaries/SectionOurBeneficiaries";
+@import "../components/Home/HomeSections/SectionFooter/SectionFooter";
 
 * {
   margin: 0;
@@ -16,3 +23,231 @@
 body {
   font-family: $font-base;
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.homeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 5px;
+}
+
+.projectHomeHeader {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.navLog .menuDown {
+  display: inline-block;
+  padding: 20px;
+}
+
+.navLog {
+  margin-bottom: 5px;
+  padding: 25px;
+}
+
+.navLog a {
+  text-decoration: none;
+  padding: 15px;
+}
+.navLog a:last-child {
+  width: 90px;
+  height: 36px;
+  /* UI Properties */
+  border: 0.75px solid #FAD648;
+  opacity: 1;
+}
+
+.menuDown a {
+  padding: 10px 28px;
+}
+
+.menuDown a:first-child {
+  width: 80px;
+  height: 42px;
+  /* UI Properties */
+  border: 0.75px solid #3C3C3C;
+  opacity: 1;
+}
+
+.decoration {
+  background-image: url("../assets/Decoration.svg");
+  width: 27%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titleAndDecoration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.decorationItem {
+  background-image: url("../../../../assets/Decoration.svg");
+  width: 13%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.whoWeHelpTitle {
+  text-align: center;
+  font: normal normal normal 38px/55px Open Sans;
+  letter-spacing: -0.76px;
+  color: #3C3C3C;
+  opacity: 1;
+  padding-bottom: 30px;
+}
+
+.whoWeHelpText {
+
+  text-align: center;
+  font: normal normal normal 22px/30px Open Sans;
+  letter-spacing: 0;
+  color: #3C3C3C;
+  opacity: 1;
+}
+
+.whoWeHelpButton {
+  border: 0.75px solid #3C3C3C;
+  opacity: 1;
+  height: 79px;
+  width: 208px;
+  text-align: center;
+  font: normal normal normal 24px/24px $font-base;
+  letter-spacing: 0;
+  color: #3C3C3C;
+}
+
+//last section
+
+.contactWithUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFFC9 0 0 no-repeat padding-box;
+  opacity: 1;
+}
+
+.contactFormPicture {
+  background-image: url("../assets/Background-Contact-Form.jpg");
+  height: 1030px;
+  width: 60%;
+  transform: scale(0.8);
+  z-index: -1;
+
+}
+
+.contactFormTitle {
+  text-align: center;
+  font: normal normal normal 38px/55px $font-base;
+  letter-spacing: -0.76px;
+  color: #3C3C3C;
+  opacity: 1;
+}
+
+.name {
+  text-align: right;
+  font: normal normal 600 16px/85px Open Sans;
+  letter-spacing: 0;
+  color: #3C3C3C;
+  opacity: 1;
+  /*border-bottom: black;*/
+}
+
+.email {
+  text-align: right;
+  font: normal normal 600 16px/85px Open Sans;
+  letter-spacing: 0;
+  color: #3C3C3C;
+  opacity: 1;
+}
+
+.nameForm {
+  padding-right: 15px;
+}
+
+.message {
+  text-align: right;
+  font: normal normal 600 16px/85px Open Sans;
+  letter-spacing: 0;
+  color: #3C3C3C;
+  opacity: 1;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.submit {
+  border: 1px solid #3C3C3C;
+  opacity: 1;
+  align-self: flex-end; //nie działa
+
+}
+
+
+.decorationContactWithUs {
+  background-image: url("../assets/Decoration.svg");
+  width: 60%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+input[type="submit"] {
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.register .mainSectionButton:first-child {
+  border: none;
+}
+
+.login .mainSectionButton:first-child {
+  border: none;
+}
+
+

@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pictureMainSection {
+  background-image: url("../../../../assets/component_things.png");
+  height: 800px;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 89% 100%;
+  position: relative;
+  top: -120px;
+  transform: scale(1.3);
+  left: -290px;
+  /*transform: rotateY(180deg);*/
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainerRightSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainSectionButtons {
+  display: flex;
+  gap: 60px;
+}
+
+.mainSectionButton {
+  border: 0.75px solid #3C3C3C;
+  opacity: 1;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  align-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.mainSectionText {
+  /* UI Properties */
+  text-align: center;
+  font: normal normal normal 38px/55px Open Sans;
+  letter-spacing: -0.76px;
+  color: #3C3C3C;
+  opacity: 1;
+}

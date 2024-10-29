@@ -1,0 +1,57 @@
+.aboutUs {
+  display: flex;
+  width: 100%;
+}
+
+.aboutUSPicture {
+  background-image: url("../../../../assets/People.jpg");
+  height: 935px;
+  width: 50%;
+}
+
+.aboutUsDescription {
+  height: 935px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F1F1;
+}
+
+.decorationAboutUs {
+  background-image: url("../../../../assets/Decoration.svg");
+  width: 27%;
+  height: 36px;
+  margin-bottom: 40px;
+}
+
+.aboutUsTitle {
+  text-align: center;
+  font: normal normal normal 38px/55px Open Sans;
+  letter-spacing: -0.76px;
+  color: #3C3C3C;
+  opacity: 1;
+  margin: revert;
+}
+
+.textAboutUs {
+  top: 2459px;
+  left: 149px;
+  width: 657px;
+  height: 209px;
+  text-align: center;
+  font: normal normal normal 30px/54px Open Sans;
+  letter-spacing: -0.6px;
+  color: #3C3C3C;
+  opacity: 1;
+}
+
+.signature {
+  background-image: url("../../../../assets/componentSignature.png");
+  height: 149px;
+  width: 209px;
+  align-self: flex-end;
+  margin-right: 150px;
+  margin-top: 50px;
+}
